@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_ul {
+  display: flex;
+  list-style: none;
+  background-color: #000000;
+  align-items: center;
+  color: #bffcf9;
+}
+body {
+  background-color: #bffcf9;
+}
+.logo {
+  font-size: 1.6rem;
+  margin: 0 1em;
+  font-weight: bold;
+}
+.both {
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.links {
+  display: inline-block;
+  padding: 1em;
+  cursor: pointer;
+}
+.both:hover {
+  color: #000000;
+  background-color: #bffcf9;
+}
+.both:hover > .dropdown {
+  display: block;
+}
+.dropdown {
+  position: absolute;
+  width: 20rem;
+  padding: 0.2em 1em;
+  background-color: #303030;
+  display: none;
+  z-index: 20;
+  color: white;
+}
+.under {
+  display: flex;
+}
+.dropdown_in {
+  width: 33%;
+}
+.dropdown_in > a {
+  display: block;
+  padding: 0.2em 0;
+  cursor: pointer;
+}
+.dropdown_in > a:hover,
+.last:hover {
+  text-decoration: underline;
+}
+.last {
+  display: block;
+  padding: 0.2em 0.2em 0.2em 0;
+  cursor: pointer;
+}
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.fa-caret-down {
+  margin-left: 13px;
+  transition: transform 0.3s ease-in-out;
+}
+.both:hover .fa-caret-down {
+  transform: rotate(180deg);
+}
+
+.con2 {
+  text-align: center;
+}
+.course_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.heading_course {
+  padding: 0.6em;
+}
+.course_item {
+  width: 25rem;
+  border-radius: 0.5em;
+  box-shadow: 0 5px 10px 0 #a6a6a6;
+  transition: transform 0.3s ease-in-out;
+  margin: 0.4em;
+  background-color: white;
+}
+.course_item:hover {
+  transform: scale(1.03);
+}
+.course_item > h3 {
+  font-size: 1.5rem;
+  margin: 0.3em;
+}
+.course_item > p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.1em 0 0.3em 0;
+}
+.course_item img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.course_button {
+  margin-bottom: 0.9em;
+  padding: 0.4em 0.6em;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #34151b,
+    #651f28,
+    #962c2d,
+    #c63f29,
+    #dc5823,
+    #ef7219,
+    #ff8d00,
+    #ffa900,
+    #ffc500,
+    #ffe100,
+    #fffd00
+  );
+}
+
+.con3,
+.con1 {
+  margin-top: 2em;
+  text-align: center;
+  padding: 0 2em;
+}
+.words {
+  font-size: 1.1rem;
+  margin-top: 1em;
+}
+
+footer {
+  padding: 1em;
+}
+.copyright {
+  margin: 1em 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
